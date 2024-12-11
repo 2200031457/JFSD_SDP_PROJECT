@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Agriculture Articles</title>
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and Background */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #e0f7fa, #ffffff);
+            color: #333;
+            padding: 0 10px;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background: #0288d1;
+            color: white;
+            border-bottom: 5px solid #0277bd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Main Title and Subheading */
+        h1 {
+            font-size: 2.8em;
+            margin: 5px 0;
+        }
+
+        p {
+            font-size: 1.2em;
+            text-align: center;
+            margin: 5px 0 20px;
+        }
+
+        /* Articles Section Styling */
+        .articles-container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 15px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        /* Article Link Styling */
+        .article-link {
+            text-decoration: none;
+            color: #0277bd;
+            font-size: 1.3em;
+            padding: 10px 0;
+            display: block;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        /* Hover Effects */
+        .article-link:hover {
+            color: #01579b;
+            transform: scale(1.1);
+            text-decoration: underline;
+        }
+
+        /* Section for Extra Visual Appeal */
+        .articles-container:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Responsive Media Queries */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.4em;
+            }
+
+            .article-link {
+                font-size: 1.1em;
+            }
+
+            .articles-container {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .article-link {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Agriculture Articles</h1>
+        <p>Explore insightful farming techniques, modern trends, and expert advice</p>
+    </header>
+
+    <!-- Articles Section -->
+    <div class="articles-container">
+        <a href="https://www.agriculture.com/crops" class="article-link" target="_blank">🌾 Crop Management Techniques</a>
+        <a href="https://www.agriculture.com/farm-tech" class="article-link" target="_blank">🚜 The Role of Technology in Farming</a>
+        <a href="https://www.agriculture.com/soil-health" class="article-link" target="_blank">🪴 How to Improve Soil Health</a>
+        <a href="https://www.agriculture.com/irrigation-methods" class="article-link" target="_blank">💧 Irrigation Methods for Modern Farming</a>
+        <a href="https://www.agriculture.com/weather-tips" class="article-link" target="_blank">☀️ Understanding Weather Impacts on Farming</a>
+    </div>
+</body>
+</html>

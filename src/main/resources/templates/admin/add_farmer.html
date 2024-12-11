@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add Farmer</title>
+</head>
+<body>
+    <h1>Add Farmer</h1>
+    <form th:action="@{/admin/save}" th:object="${farmer}" method="post">
+        <label>Name: <input type="text" th:field="*{name}" /></label><br/>
+        <label>Email: <input type="email" th:field="*{email}" /></label><br/>
+        <label>Farm Type: <input type="text" th:field="*{farmType}" /></label><br/>
+        <input type="submit" value="Save" />
+    </form>
+    <a href="/admin/dashboard">Back to Dashboard</a>
+</body>
+</html>

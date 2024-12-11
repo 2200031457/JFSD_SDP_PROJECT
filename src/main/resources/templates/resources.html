@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources for Farmers</title>
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://source.unsplash.com/1600x900/?farm,nature') no-repeat center center/cover;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            background-attachment: fixed;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        /* Header Section */
+        h1 {
+            text-align: center;
+            color: #2E7D32;
+            margin-bottom: 20px;
+            font-size: 2.8em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Section Styling */
+        .section {
+            margin: 15px 0;
+            padding: 10px;
+            border-left: 5px solid #4CAF50;
+            background: #f1f1f1;
+            border-radius: 5px;
+            transition: transform 0.2s ease;
+        }
+
+        /* Button-like links */
+        a {
+            display: inline-block;
+            color: #fff;
+            background-color: #4CAF50;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        a:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        /* Sticky background sticker effect */
+        .sticker {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 100px;
+            height: auto;
+            opacity: 0.7;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            a {
+                padding: 8px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="sticker" src="https://img.icons8.com/color/48/000000/tractor.png" alt="Sticker" />
+
+        <h1>Resources for Farmers</h1>
+
+        <div class="section">
+            <h2>1) Agriculture Articles</h2>
+            <a href="/farmer/articles">Read Articles</a>
+        </div>
+
+        <div class="section">
+            <h2>2) Farming Videos</h2>
+            <a href="/farmer/videos">Watch Farming Videos</a>
+        </div>
+
+        <div class="section">
+            <h2>3) Farming Tips</h2>
+            <a href="/farmer/tips">Read Tips</a>
+        </div>
+    </div>
+</body>
+</html>

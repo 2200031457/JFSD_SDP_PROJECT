@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <h1>Admin Dashboard for Farmers</h1>
+    <a href="/admin/add-farmer">Add Farmer</a>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Farm Type</th>
+            <th>Actions</th>
+        </tr>
+        <tr th:each="farmer : ${farmers}">
+            <td th:text="${farmer.name}"></td>
+            <td th:text="${farmer.email}"></td>
+            <td th:text="${farmer.farmType}"></td>
+            <td>
+                <a th:href="@{'/admin/edit-farmer/' + ${farmer.id}}">Edit</a> |
+                <a th:href="@{'/admin/delete-farmer/' + ${farmer.id}}"
+                   onclick="return confirm('Are you sure?');">Delete</a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

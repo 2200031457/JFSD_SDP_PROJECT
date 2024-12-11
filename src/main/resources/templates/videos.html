@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - Farming Videos</title>
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(to bottom, #f3f4f6, #d9ecf2);
+            color: #333;
+            padding: 10px;
+        }
+
+        /* Main Header */
+        h1 {
+            text-align: center;
+            color: #01579b;
+            margin: 20px 0;
+            font-size: 2.4em;
+        }
+
+        p {
+            text-align: center;
+            margin: 0 0 20px;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        /* Video Section Styling */
+        .video-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            transition: transform 0.2s ease;
+        }
+
+        /* Apply hover effect to each video section */
+        .video-container:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Styling the embedded video iframes */
+        iframe {
+            display: block;
+            margin: 10px auto;
+            max-width: 100%;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s ease;
+        }
+
+        /* Add hover effect to iframe */
+        iframe:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            iframe {
+                height: 240px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.6em;
+            }
+
+            iframe {
+                height: 200px;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Farming Video 1</h1>
+    <p>Watch this informative video:</p>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mZXetb1TPEg" allowfullscreen></iframe>
+    </div>
+
+    <h1>Farming TED Video 1</h1>
+    <p>Watch this informative video:</p>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Oy2kZTYhFVI" allowfullscreen></iframe>
+    </div>
+
+    <h1>Farming TED Video 2</h1>
+    <p>Watch this informative video:</p>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/heTxEsrPVdQ" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
